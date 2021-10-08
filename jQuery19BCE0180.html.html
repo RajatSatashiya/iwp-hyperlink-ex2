@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai Indians</title>
+
+    <style>
+        body {
+            margin: 20px;
+            padding: 0;
+            background: #f1f5f8;
+            font-family: Calibri;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+        ul {
+            padding: 0;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        p {
+            font-size: 17px;
+        }
+        li {
+            float: left;
+            background: black;
+            padding: 15px;
+            color: white;
+            list-style-type: none;
+        }
+        li:hover {
+            background: white;
+            color: black;
+        }
+        li ul{
+            display:none;
+            position:absolute;
+        }
+        li:hover ul{
+            display:block;
+            float: none;
+        }
+        li ul li{
+            clear:both;
+        }
+        section{
+            box-sizing:border-box;
+            width: 70%;
+            height: 100%;
+            float: left;
+            margin: 15px;
+            padding: 20px;
+            background: pink;
+        }
+        aside {
+            box-sizing:border-box;
+            width: 25%;
+            height: 100%;
+            padding: 20px;
+            background: tomato;
+            float: left;
+        }
+        img{
+            width:150px;
+            position:absolute;
+            right:40px;
+            top:20px;
+        }
+        footer{
+            clear:both;
+            /* width: 90%; */
+            background: #00C4A7;
+            padding: 10px;
+            margin: 20px;
+        }
+        .trophy{
+            display: none;
+        }
+        
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="team">Mumbai Indians</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/1200px-Mumbai_Indians_Logo.svg.png" width=200px>
+    </header>
+    </details>
+    <nav>
+        <ul>
+            <li>Intro</li>
+            <li>Trophies</li>
+            <li>Players</li>
+            <li>Upcoming Matches</li>
+        </ul>
+    </nav>
+    
+
+    <br><br>
+    <section>
+        <article>
+            <h2 id="intro">Intro</h2>
+            <div>
+                The Mumbai Indians are a franchise cricket team based in Mumbai, Maharashtra, that competes in the Indian Premier League. Founded in 2008, the team is owned by India's biggest conglomerate, Reliance Industries, through its 100% subsidiary IndiaWin Sports. Since its establishment, the team has played its home matches in the 33,108-capacity Wankhede Stadium in Mumbai. In 2017, the Mumbai Indians became the first franchise to cross the $100 million mark in brand value among the IPL franchises. The brand value of Mumbai Indians, in 2019, is estimated to be around ₹809 crore (roughly $115 million), the highest among all the IPL franchises for the fourth consecutive year. Chennai Super Kings by 22 runs. The Mumbai team management was criticised for the "strategic errors" during the final such as sending Abhishek Nayar and Harbhajan at batting positions 3 and 4 respectively while Duminy and Pollard were sent at 7 and 8. Mumbai skipper, who scored 618 runs at an average of 47.53 and strike rate of 132.6, won the Orange Cap for scoring most runs in the season. Mumbai qualified for the 2010 Champions League Twenty20 where they were eliminated in the group stage with two wins and two defeats in four matches.
+            </div>
+        </article>
+
+        <article>
+            <h2 id="intro">The Loss of 2010 </h1>
+            <div>
+                At the 2010 players auction, Mumbai Indians bought Trinidadian all-rounder for $750,000 following a secret tiebreaker. After the auction, they signed up ten uncapped Indian players out of whom seven were former ICL players. Former India cricketer Robin Singh was named as the head coach of the team as Pollock took up the  role of bowling coach. Mumbai had to shift their home venue to Brabourne Stadium for the season since the Wankhede was
+                undergoing renovation to host some matches of the 2011 ICC Cricket World Cup. Mumbai won seven of their first
+                eight games to take the top spot in the points table. Their success was mainly due to the efforts of Tendulkar, Malinga,
+                Harbhajan, Ambati Rayudu and Saurabh Tiwary. They won three of the remaining six league games and finished with
+                20 played at the Wankhede where Mumbai faced the Kolkata Knight Riders.
+            </div>
+        </article>
+    </section>
+    <aside>
+        <h2 id="intro">Champions of T20</h1>
+        <div>
+            Mumbai Indians won the 2011 Champions League Twenty20 after beating Royal Challengers Bangalore by 31 runs in the final. The team won the double by winning its first IPL title, in 2013, by defeating Chennai Super Kings by 23 runs in the final, and then defeated the Rajasthan Royals by 33 runs to win its second Champions League Twenty20 title later that year. They won their second IPL title on 24 May 2015 by defeating the Chennai Super Kings by 41 runs in the final and became the third team to win more than one IPL title. On 21 May 2017, they won their third IPL title by defeating the Rising Pune Supergiant by 1 run in a thrilling final, thus becoming the first team to win three IPL titles. While playing the tournament, they won their 100th T20, becoming the first team to do so. In 2019, they repeated the same feat as they won a record breaking fourth IPL title, by beating CSK by just 1 run on 12 May 2019 in the IPL Final.
+        </div>
+    </aside>
+    <section>
+        <h2>Why do you love MI??</h2>
+            <label for="fanName">Username: </label>
+            <input type="text" name="fanName" placeholder="enter your name here">
+            <br><br>
+
+            <textarea name="description" style="resize:none; opacity: 0.8;" rows="5" cols="70">I love MI because...</textarea>
+            <br><br>
+
+            <span id="trophies"><b>Know more about us</b></span>
+            <div class="trophy">Visit our official website <a href="https://www.mumbaiindians.com/">Mumbai Indians</a></div>
+    </section>
+
+   <footer>
+        Thank You to the fans of the most successful franchise of the IPL.
+   </footer>
+
+   
+   <script>
+       $(document).ready(function(){
+           //mouseover event
+           $("footer").mouseover(function(){
+               $("footer").css({"background-color":"black", "color":"white"});
+           });
+
+           //mouseout event
+           $("footer").mouseout(function(){
+               $("footer").css("background-color", "#014D8F");
+           })
+
+           //focus event
+           $("input").focus(function(){
+               $(this).css({"background-color":"#014D8F", "color":"white"});
+           })
+
+           //blur
+           $("input").blur(function(){
+               $(this).css({"background-color":"white", "color":"black"});
+           })
+
+           //keydown event
+           $("body").keydown(function(){
+               $("body").css({"background-color":"#014D8F"})
+           })
+
+           //hide effect
+           $("div").click(function(){
+               $(this).hide(1000);
+           })
+
+           //show effect
+           $("h2").click(function(){
+                $(this).parent().children().show(1000);
+           })
+
+           //toggle effect
+           $("h1").click(function(){
+               $("img").toggle(1000);
+           })
+
+           //slideToggle effect
+           $("#trophies").click(function(){
+               $(".trophy").slideToggle("slow");
+           });
+
+           //animate effect
+           $("section").click(function(){
+               $("section").animate({fontSize: "20px"});
+           })
+
+       });
+   </script>
+
+</body>
+</html>
