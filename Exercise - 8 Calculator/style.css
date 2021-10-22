@@ -1,0 +1,52 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.output {
+  background: #ede7cc;
+  width: 100%;
+  margin-bottom: 2px;
+  height: 65px;
+  font-size: 20px;
+  text-align: right;
+  padding: 6% 30px 0 0;
+  border-radius: 5px;
+}
+.calci {
+  font-family: Calibri;
+  font-weight: medium;
+  font-size: 20px;
+  width: 300px;
+  margin: auto;
+  margin-top: 15%;
+  text-align: center;
+}
+.input {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+}
+.val {
+  background: #ede7cc;
+  /* margin: 4px 2px 0 2px; */
+  padding: 20px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.val[data-val="c"] {
+  background-color: #ff1919;
+  color: white;
+}
+.val:hover {
+  background: white;
+  background: #25233b;
+  color: white;
+}
+.val[data-val="c"] {
+  background-color: #ff1919;
+  color: white;
+}
